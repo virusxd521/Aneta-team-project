@@ -1,0 +1,6 @@
+@import "../sass-utils/_variables";
+@import "../sass-utils/_mixins";
+
+body {
+  @include flexing(column);
+}

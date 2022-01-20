@@ -1,0 +1,40 @@
+@import "../sass-utils/_variables";
+@import "../sass-utils/_mixins";
+
+// header
+.header__section {
+  @include flexing(row);
+  overflow: hidden;
+}
+
+// Navigation image
+.img {
+  height: 50px;
+  width: auto;
+  margin: 0 auto;
+}
+
+// Navigation text
+.header__nav {
+  height: $header-height;
+  @include flexing(row);
+  width: 90%;
+  margin-left: auto;
+
+  & nav {
+    background-color: $dark-grey;
+    width: 100%;
+    margin-left: auto;
+    @include flexing(row);
+    justify-content: space-around;
+    align-items: center;
+    color: $white;
+
+    & li {
+      text-decoration: none;
+      list-style: none;
+      font-size: $secondary;
+      //   margin-right: auto;
+    }
+  }
+}
